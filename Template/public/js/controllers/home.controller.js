@@ -13,12 +13,13 @@
         vm.clientePage = clientePage;
         vm.estoquePage = estoquePage;
         vm.mercadoriaPage = mercadoriaPage;
+        
 
         activate();
 
         function activate() {
         }
-
+        
         function clientePage() {
             $location.path("/cliente");
         }
@@ -27,6 +28,9 @@
         }
         function mercadoriaPage() {
             $location.path("/mercadoria");
+        }
+        function movimentacaoPage() {
+            $location.path("/movimentacao");
         }
     }
 })();

@@ -11,7 +11,7 @@
                             <div class="col-sm-4">
                                 <a class="btn btn-default pull-right btn-lg" href="estado/new">
                                     <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    <span>Nova Cidade</span>
+                                    <span>Novo Estado</span>
                                 </a>
                             </div>
                         </div>
@@ -23,14 +23,14 @@
                             <thead>
                                 <tr>
                                     <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
+                                    <th>PAIS</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.pais.nome}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/estado/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

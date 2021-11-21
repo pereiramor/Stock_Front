@@ -3,7 +3,7 @@
 
     angular
         .module("MyApp")
-        .controller("MovimentacaoeFormController", MovimentacaoFormController);
+        .controller("MovimentacaoFormController", MovimentacaoFormController);
 
     MovimentacaoFormController.$inject = [
         "MovimentacaoService",

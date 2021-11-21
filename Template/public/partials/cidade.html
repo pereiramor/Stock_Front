@@ -23,14 +23,14 @@
                             <thead>
                                 <tr>
                                     <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
+                                    <th>ESTADO</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.estado.nome}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/cidade/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

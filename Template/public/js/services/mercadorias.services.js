@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/mercadorias';
+        var URL = 'http://localhost:8080/api/mercadoria';
 
         return service;
 

@@ -5,7 +5,7 @@
         .module("MyApp")
         .controller("MercadoriaFormController", MercadoriaFormController);
 
-    MrcadoriaFormController.$inject = [
+    MercadoriaFormController.$inject = [
         "MercadoriaService",
         "$location",
         "$routeParams",

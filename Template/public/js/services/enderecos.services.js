@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/endereco';
+        var URL = 'http://localhost:8080/api/enderecos';
 
         return service;
 

@@ -11,7 +11,7 @@
                             <div class="col-sm-4">
                                 <a class="btn btn-default pull-right btn-lg" href="movimentacao/new">
                                     <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    <span>Nova Cidade</span>
+                                    <span>Nova Movimentação</span>
                                 </a>
                             </div>
                         </div>
@@ -23,14 +23,20 @@
                             <thead>
                                 <tr>
                                     <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
+                                    <th>TIPO MOVIMENTAÇÃO</th>
+                                    <th>MERCADORIA</th>
+                                    <th>QUANTIDADE</th>
+                                    <th>ESTOQUE</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.tipoMovimentacao}}</td>
+                                    <td>{{item.mercadoria.nome}}</td>
+                                    <td>{{item.quantidade}}</td>
+                                    <td>{{item.estoque}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/movimentacao/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

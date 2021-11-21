@@ -23,14 +23,18 @@
                             <thead>
                                 <tr>
                                     <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
+                                    <th>ALTURA</th>
+                                    <th>PESO</th>
+                                    <th>VALOR UNITÁRIO</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.altura}}</td>
+                                    <td>{{item.peso}}</td>
+                                    <td>{{item.valorUnitario}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/mercadoria/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
