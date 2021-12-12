@@ -11,7 +11,7 @@
 
         vm.movimentacaoPage = movimentacaoPage;
         vm.clientePage = clientePage;
-        vm.estoquePage = estoquePage;
+        vm.fornecedorPage = fornecedorPage;
         vm.mercadoriaPage = mercadoriaPage;
         
 
@@ -23,8 +23,8 @@
         function clientePage() {
             $location.path("/cliente");
         }
-        function estoquePage() {
-            $location.path("/estoque");
+        function fornecedorPage() {
+            $location.path("/fornecedor");
         }
         function mercadoriaPage() {
             $location.path("/mercadoria");

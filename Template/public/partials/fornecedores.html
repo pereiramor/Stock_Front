@@ -6,7 +6,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h3>Cadastro de Cidades </h3>
+                                <h3>Cadastro de Fornecedores </h3>
                             </div>
                             <div class="col-sm-4">
                                 <a class="btn btn-default pull-right btn-lg" href="fornecedor/new">
@@ -23,14 +23,18 @@
                             <thead>
                                 <tr>
                                     <th>NOME</th>
-                                    <th>POLULAÇÃO</th>
+                                    <th>CNPJ</th>
+                                    <th>ENDEREÇO</th>
+                                    <th>TELEFONE</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
-                                    <td>{{item.populacao}}</td>
+                                    <td>{{item.cnpj}}</td>
+                                    <td>{{item.enderecos.nomerua}}</td>
+                                    <td>{{item.telefone}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/fornecedor/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

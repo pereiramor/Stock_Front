@@ -10,13 +10,15 @@
                             <div class="form-group">
                                 <label for="nome" class="col-sm-2">Nome</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control text-left" ng-model="vm.cidade.nome" id="nome">
+                                    <input type="text" class="form-control text-left" ng-model="vm.cadastro.nome" id="nome">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="nome" class="col-sm-2">Estado</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control text-left" ng-model="vm.cidade.estado" id="nome">
+                            <div class="form-group" >
+                                <label for="estado" class="col-sm-2">Estado</label>
+                            <div class="col-sm-8" ng-controller="EstadoListController as estVM">
+                                <select name="estado" ng-model="vm.cadastro.estado.id" class="form-control" id="estado">
+                                    <option ng-repeat="item in estVM.itens" value={{item.id}}>{{item.nome}} - {{item.nome}}</option>
+                                </select>
                                 </div>
                             </div>
                          

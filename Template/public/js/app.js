@@ -5,6 +5,14 @@ angular
 
         $routeProvider
             .when("/", {
+            templateUrl: "partials/login.html",
+            controller:"LoginCtrl"
+        })
+            .when("/login", {
+            templateUrl: "partials/login.html",
+            controller:"LoginCtrl"
+        })
+            .when("/", {
                 templateUrl: "partials/home.html",
             })
             .when("/home", {
@@ -72,6 +80,15 @@ angular
             })
             .when("/estado/new", {
                 templateUrl: "partials/estados-form.html",
+            })
+            .when("/fornecedor", {
+                templateUrl: "partials/fornecedores.html",
+            })
+            .when("/fornecedor/:id", {
+                templateUrl: "partials/fornecedores-form.html",
+            })
+            .when("/fornecedor/new", {
+                templateUrl: "partials/fornecedores-form.html",
             })
             .otherwise({
                 templateUrl: "partials/404.html",

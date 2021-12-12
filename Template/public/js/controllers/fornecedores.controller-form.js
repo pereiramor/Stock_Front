@@ -3,7 +3,7 @@
 
     angular
         .module("MyApp")
-        .controller("FornecedoreFormController", FornecedorFormController);
+        .controller("FornecedorFormController", FornecedorFormController);
 
     FornecedorFormController.$inject = [
         "FornecedorService",

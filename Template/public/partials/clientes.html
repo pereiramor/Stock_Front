@@ -27,6 +27,8 @@
                                     <th>ENDEREÇO</th>
                                     <th>EMAIL</th>
                                     <th>RG</th>
+                                    <th>DOCUMENTO</th>
+                                    <th>SEXO</th>
                                     <th>AÇÕES</th>
                                 </tr>
                             </thead>
@@ -34,9 +36,11 @@
                                 <tr ng-repeat="item in vm.itens">
                                     <td>{{item.nome}}</td>
                                     <td>{{item.cpf}}</td>
-                                    <td>{{item.endereco}}</td>
+                                    <td>{{item.enderecos.nomerua}}</td>
                                     <td>{{item.email}}</td>
                                     <td>{{item.rg}}</td>
+                                    <td>{{item.documento}}</td>
+                                    <td>{{item.sexo}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/cliente/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

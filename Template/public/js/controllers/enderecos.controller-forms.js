@@ -35,7 +35,7 @@
         }
 
         function salvar() {
-            CidadeService.save(vm.cadastro).success(function () {
+            EnderecoService.save(vm.cadastro).success(function () {
                 $location.path("/endereco");
                 alert("Endereço cadastrado com sucesso!!");
             }).error(function (erro) {

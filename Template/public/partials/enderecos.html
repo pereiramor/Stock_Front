@@ -30,9 +30,9 @@
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
-                                    <td>{{item.cidade}}</td>
-                                    <td>{{item.rua}}</td>
-                                    <td>{{item.casa}}</td>
+                                    <td>{{item.cidade.nome}}</td>
+                                    <td>{{item.nomerua}}</td>
+                                    <td>{{item.numerocasa}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/endereco/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
